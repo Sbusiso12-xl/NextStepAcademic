@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<title>Pricing — NextStep Academic Solutions</title>
+<meta name="description" content="Monthly packages and per-session rates for tailored tutoring." />
+<meta property="og:title" content="Pricing — NextStep Academic Solutions" />
+</head><body>
+<script src="loader.js"></script>
+<header class="site-header" id="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19l6-6 4 4 6-8"/><path d="M14 9h6v6"/></svg>
+      <span>NextStep <em>Academic</em></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="book.html">Book</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:.5rem;">
+      <!-- Theme toggle -->
+      <button class="btn-icon" id="theme-toggle" aria-label="Toggle colour theme">
+        <svg id="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg id="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <!-- Hamburger (mobile only) -->
+      <button class="btn-icon btn-hamburger" id="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <svg id="icon-menu" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <a href="book.html" class="btn btn-primary btn-sm">Book a session</a>
+    </div>
+  </div>
+  <!-- Mobile nav drawer -->
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="book.html">Book</a>
+  </nav>
+</header>
+
+<section class="page-hero" data-anim="fade-up">
+  <p class="eyebrow">Pricing</p>
+  <h1>Monthly packages. Better value.</h1>
+  <p>Lock in a rhythm with discounted monthly bundles — or book per session.</p>
+</section>
+
+<section class="packages">
+  <div class="pkg-group" data-anim="card">
+    <header><h2>High School Packages</h2><span></span></header>
+    <div class="pkg-grid">
+      <div class="pkg-card">
+        <div class="pkg-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+        </div>
+        <div><p class="pkg-sessions">4 Sessions <span>per month</span></p><p class="pkg-price">R850</p></div>
+      </div>
+      <div class="pkg-card">
+        <div class="pkg-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+        </div>
+        <div><p class="pkg-sessions">2 Sessions <span>per month</span></p><p class="pkg-price">R480</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pkg-group" data-anim="card">
+    <header><h2>Varsity Packages</h2><span></span></header>
+    <div class="pkg-grid">
+      <div class="pkg-card">
+        <div class="pkg-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+        </div>
+        <div><p class="pkg-sessions">4 Sessions <span>per month</span></p><p class="pkg-price">R1100</p></div>
+      </div>
+      <div class="pkg-card">
+        <div class="pkg-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+        </div>
+        <div><p class="pkg-sessions">2 Sessions <span>per month</span></p><p class="pkg-price">R600</p></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="pkg-note" data-anim="fade-up">All packages include WhatsApp support between sessions and access to NextStep Study Guides.</p>
+
+  <div class="cta-row" data-anim="fade-up">
+    <a href="book.html" class="btn btn-primary">Book a package
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<section class="section" data-anim="section">
+  <div class="section-title"><h2>Per-session rates</h2><span class="divider"></span></div>
+  <div class="cards-3">
+    <div class="feature-card" data-anim="card"><h3>High School</h3><p class="price-inline">R250 <small>/ 1:15 hrs</small></p></div>
+    <div class="feature-card" data-anim="card"><h3>Varsity</h3><p class="price-inline">R350 <small>/ 1 hr</small></p></div>
+    <div class="feature-card" data-anim="card"><h3>Group Sessions</h3><p class="price-inline">R180 <small>/ 1:30 hrs</small></p></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="col">
+      <h3>NextStep Academic Solutions</h3>
+      <p>Tailored tutoring, academic coaching, exam prep, study guides and bootcamps — built to take students to the next step.</p>
+      <p style="margin-top:.5rem;font-size:.75rem;color:var(--muted-fg)">NextStep Academic Solutions (Pty) Ltd</p>
+    </div>
+    <div class="contact">
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 071 701 0398</p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> khumophala65@gmail.com</p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg> Saturday &amp; Sunday sessions</p>
+    </div>
+    <div class="copy"><p>© <span id="year"></span> NextStep Academic Solutions (Pty) Ltd.</p><p style="margin-top:.25rem">Built with care.</p></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>

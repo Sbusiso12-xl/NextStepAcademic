@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<title>NextStep Academic Solutions — Tutoring, Coaching & Exam Prep</title>
+<meta name="description" content="Tailored tutoring, academic coaching, exam prep, NextStep Study Guides and exam bootcamps for high school and varsity students." />
+<meta property="og:title" content="NextStep Academic Solutions" />
+<meta property="og:description" content="Inspiring confidence. Preparing students to thrive — from high school to varsity." />
+</head><body>
+<script src="loader.js"></script>
+<header class="site-header">
+ <header class="site-header" id="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19l6-6 4 4 6-8"/><path d="M14 9h6v6"/></svg>
+      <span>NextStep <em>Academic</em></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="book.html">Book</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:.5rem;">
+      <!-- Theme toggle -->
+      <button class="btn-icon" id="theme-toggle" aria-label="Toggle colour theme">
+        <svg id="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg id="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <!-- Hamburger (mobile only) -->
+      <button class="btn-icon btn-hamburger" id="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <svg id="icon-menu" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <a href="book.html" class="btn btn-primary btn-sm">Book a session</a>
+    </div>
+  </div>
+  <!-- Mobile nav drawer -->
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="book.html">Book</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img class="hero-bg" src="assets/hero-finance.jpg" alt="Mathematics and finance abstract" width="1920" height="1080" />
+  <div class="hero-overlay-1"></div>
+  <div class="hero-overlay-2"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-equations">
+    <span class="eq-int">∫</span><span class="eq-sigma">Σ</span><span class="eq-pi">π</span><span class="eq-mc2">E = mc²</span>
+  </div>
+  <div class="hero-inner">
+    <div class="badge" data-anim="fade"><span class="dot"></span>Now booking monthly packages</div>
+    <h1 data-anim="hero-title">
+      Take the<br/><span class="gold-text">Next Step.</span>
+    </h1>
+    <div class="signature" data-anim="fade">
+      <span class="bar"></span><p>NEXTSTEP ACADEMIC SOLUTIONS</p><span class="bar"></span>
+    </div>
+    <p class="lead" data-anim="fade-up">
+      Tailored tutoring, academic coaching, exam &amp; test prep, NextStep Study Guides
+      and exam bootcamps. Built to inspire confidence — and prepare high school
+      students for university, and varsity students to thrive.
+    </p>
+    <div class="actions" data-anim="fade-up">
+      <a href="book.html" class="btn btn-primary">Book your spot
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="pricing.html" class="btn btn-secondary">View monthly packages</a>
+    </div>
+    <div class="stats" data-anim="stats">
+      <div><p class="k">7+</p><p class="v">Years tutoring</p></div>
+      <div><p class="k">100+</p><p class="v">Students helped</p></div>
+      <div><p class="k">UCT</p><p class="v">Economics marker</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-anim="section">
+  <div class="section-title"><h2>What we offer</h2><span class="divider"></span></div>
+  <div class="cards-3">
+    <div class="feature-card" data-anim="card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <h3>Tailored Tutoring</h3>
+      <p>One-on-one Maths &amp; Economics, built around your gaps and goals.</p>
+    </div>
+    <div class="feature-card" data-anim="card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+      <h3>Academic Coaching</h3>
+      <p>Study systems, time management and mindset for sustained results.</p>
+    </div>
+    <div class="feature-card" data-anim="card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+      <h3>Exam &amp; Test Prep</h3>
+      <p>Past-paper-driven prep that builds pattern recognition and speed.</p>
+    </div>
+    <div class="feature-card" data-anim="card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+      <h3>NextStep Study Guides</h3>
+      <p>Concise, exam-ready guides distilled from years of teaching.</p>
+    </div>
+    <div class="feature-card" data-anim="card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+      <h3>Exam Bootcamps</h3>
+      <p>High-intensity weekend sprints before major exams.</p>
+    </div>
+    <div class="feature-card" data-anim="card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+      <h3>Proven Track Record</h3>
+      <p>7+ years, 100+ students, real measurable improvements.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section vision" data-anim="section">
+  <div class="vision-inner">
+    <p class="eyebrow">Our vision</p>
+    <h2>More than tutoring — a launchpad.</h2>
+    <p>
+      We inspire confidence and prepare high school students for university, and equip
+      varsity students with the tools to not just survive, but <span class="gold-text">thrive</span>.
+    </p>
+  </div>
+</section>
+
+<section class="section testimonial-section" data-anim="section">
+  <div class="section-title"><h2>What students say</h2><span class="divider"></span></div>
+  <figure class="testimonial" data-anim="fade-up">
+    <svg class="quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.17 15.5H6.5l1.83-7H4.5v9h4.67Zm9 0H15.5l1.83-7H13.5v9h4.67Z"/></svg>
+    <blockquote>
+      <p>My experience of working with Khumo Phala as my Mathematics tutor has been very meaningful and rewarding. He is a dedicated and patient teacher who genuinely wants to ensure that his students understand topics of varying difficulty. His ability to transform difficult problems into a sequence of clear steps made the subject much easier to comprehend and apply without any trouble.</p>
+      <p>I was doing fairly well in Mathematics before working with him, but his guidance helped me improve to the next level. With his help, I was able to move from a <strong>90% range to consistently achieving marks in the high 90s</strong>. He always made sure that I was ahead of my work, helping me unlock my full potential. He encouraged me to think more critically, and helped me recognise how approachable a math topic can be.</p>
+      <p>Aside from his teaching ability, Khumo is a kind and professional person who creates a comfortable and pleasant learning space. His guidance changed my view of Maths, along with my confidence and performance. I would highly recommend him to any student who is looking for an insightful and engaging tutor.</p>
+    </blockquote>
+    <figcaption>
+      <span class="name">Mohau</span>
+      <span class="role">Grade 11 student</span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="cta" data-anim="section">
+  <div class="inner">
+    <p class="eyebrow">Book your spot today</p>
+    <h2>Ready to take the next step?</h2>
+    <p>Monthly packages available at a discount. Weekend sessions, limited spots.</p>
+    <a href="book.html" class="btn btn-primary">Enroll now
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="col">
+      <h3>NextStep Academic Solutions</h3>
+      <p>Tailored tutoring, academic coaching, exam prep, study guides and bootcamps — built to take students to the next step.</p>
+      <p style="margin-top:.5rem;font-size:.75rem;color:var(--muted-fg)">NextStep Academic Solutions (Pty) Ltd</p>
+    </div>
+    <div class="contact">
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 071 701 0398</p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> khumophala65@gmail.com</p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg> Saturday &amp; Sunday sessions</p>
+    </div>
+    <div class="copy"><p>© <span id="year"></span> NextStep Academic Solutions (Pty) Ltd.</p><p style="margin-top:.25rem">Built with care.</p></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>
